@@ -16,12 +16,12 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
+font-family:Segoe UI, Arial;
 scroll-behavior:smooth;
 }
 
 body{
-background:#f5f7fb;
+background:#f6f8fc;
 color:#333;
 }
 
@@ -37,29 +37,29 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 
-padding:18px 80px;
+padding:18px 100px;
 
 background:white;
-box-shadow:0 2px 10px rgba(0,0,0,0.08);
 
-z-index:1000;
+box-shadow:0 2px 12px rgba(0,0,0,0.08);
+
+z-index:999;
 
 }
 
 .logo{
+
 font-size:22px;
 font-weight:bold;
-color:#007BFF;
+color:#0066ff;
+
 }
 
 nav a{
 
-margin-left:25px;
-
+margin-left:28px;
 text-decoration:none;
-
 color:#333;
-
 font-size:15px;
 
 }
@@ -71,20 +71,18 @@ font-size:15px;
 height:100vh;
 
 display:flex;
-
 align-items:center;
-
 justify-content:center;
 
 text-align:center;
 
-background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+color:white;
+
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
 url("https://images.unsplash.com/photo-1518770660439-4636190af475");
 
 background-size:cover;
 background-position:center;
-
-color:white;
 
 padding:0 20px;
 
@@ -92,8 +90,8 @@ padding:0 20px;
 
 .hero h1{
 
-font-size:50px;
-margin-bottom:20px;
+font-size:52px;
+margin-bottom:18px;
 
 }
 
@@ -106,13 +104,11 @@ margin-bottom:30px;
 
 .btn{
 
-display:inline-block;
+background:#0066ff;
 
-background:#007BFF;
+padding:14px 32px;
 
-padding:12px 28px;
-
-border-radius:4px;
+border-radius:5px;
 
 color:white;
 
@@ -120,7 +116,7 @@ text-decoration:none;
 
 }
 
-/* SECTION */
+/* SECTIONS */
 
 .section{
 
@@ -144,7 +140,7 @@ font-size:32px;
 
 display:grid;
 
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 
 gap:30px;
 
@@ -154,21 +150,29 @@ gap:30px;
 
 background:white;
 
-padding:30px;
+padding:35px;
 
-border-radius:8px;
+border-radius:10px;
 
-box-shadow:0 5px 15px rgba(0,0,0,0.05);
+box-shadow:0 6px 20px rgba(0,0,0,0.05);
 
 text-align:center;
+
+transition:0.3s;
+
+}
+
+.service-card:hover{
+
+transform:translateY(-8px);
 
 }
 
 .service-card i{
 
-font-size:36px;
+font-size:40px;
 
-color:#007BFF;
+color:#0066ff;
 
 margin-bottom:15px;
 
@@ -182,7 +186,7 @@ display:flex;
 
 align-items:center;
 
-gap:50px;
+gap:60px;
 
 }
 
@@ -210,7 +214,7 @@ text-align:center;
 
 .founder img{
 
-width:140px;
+width:150px;
 
 border-radius:50%;
 
@@ -240,7 +244,7 @@ padding:10px;
 
 border:1px solid #ccc;
 
-border-radius:4px;
+border-radius:5px;
 
 }
 
@@ -258,7 +262,7 @@ padding:20px;
 
 }
 
-/* WHATSAPP BUTTON */
+/* WHATSAPP */
 
 .whatsapp{
 
@@ -269,7 +273,7 @@ right:20px;
 
 background:#25D366;
 
-padding:15px;
+padding:16px;
 
 border-radius:50%;
 
@@ -279,12 +283,12 @@ color:white;
 
 }
 
-/* RESPONSIVE */
+/* MOBILE */
 
 @media(max-width:900px){
 
 header{
-padding:15px 20px;
+padding:18px 20px;
 }
 
 .section{
@@ -330,11 +334,7 @@ font-size:36px;
 
 <h1>Reliable IT Infrastructure Solutions</h1>
 
-<p>
-
-Hardware Supply • Network Setup • CCTV Installation • Asset Management
-
-</p>
+<p>Hardware • Networking • CCTV • IT Asset Management</p>
 
 <a class="btn" href="#contact">Get IT Support</a>
 
@@ -354,7 +354,7 @@ Hardware Supply • Network Setup • CCTV Installation • Asset Management
 
 <h3>Hardware Supply</h3>
 
-<p>Laptops, desktops and IT equipment for businesses.</p>
+<p>Business laptops, desktops and IT hardware.</p>
 
 </div>
 
@@ -364,7 +364,7 @@ Hardware Supply • Network Setup • CCTV Installation • Asset Management
 
 <h3>Network Setup</h3>
 
-<p>Professional office networking infrastructure.</p>
+<p>Office networking and infrastructure setup.</p>
 
 </div>
 
@@ -374,7 +374,7 @@ Hardware Supply • Network Setup • CCTV Installation • Asset Management
 
 <h3>CCTV Installation</h3>
 
-<p>Security and surveillance system installation.</p>
+<p>Professional surveillance solutions.</p>
 
 </div>
 
@@ -384,7 +384,7 @@ Hardware Supply • Network Setup • CCTV Installation • Asset Management
 
 <h3>IT Asset Management</h3>
 
-<p>Track and manage company IT devices.</p>
+<p>Track and manage company IT assets.</p>
 
 </div>
 
@@ -404,9 +404,9 @@ Hardware Supply • Network Setup • CCTV Installation • Asset Management
 
 <p>
 
-Kavish Informatics provides reliable IT infrastructure services for
-companies and organizations including hardware procurement,
-network setup, CCTV installation and IT asset management.
+Kavish Informatics delivers professional IT infrastructure
+services including hardware procurement, network setup,
+CCTV installation and IT asset management for businesses.
 
 </p>
 
