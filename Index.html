@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kavish Informatics | IT Infrastructure Experts</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+/* NAVBAR */
+
+header{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:20px 80px;
+
+background:#020617;
+
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+nav{
+display:flex;
+gap:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:16px;
+}
+
+/* HERO */
+
+.hero{
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+padding:100px 120px;
+
+background:linear-gradient(135deg,#020617,#1e3a8a);
+
+}
+
+.hero-text{
+max-width:600px;
+}
+
+.hero-text h1{
+
+font-size:55px;
+margin-bottom:20px;
+
+}
+
+.hero-text span{
+color:#38bdf8;
+}
+
+.hero-text p{
+
+font-size:20px;
+margin-bottom:30px;
+
+}
+
+.btn{
+
+background:#38bdf8;
+padding:14px 32px;
+border-radius:30px;
+text-decoration:none;
+color:white;
+
+}
+
+.hero-img img{
+width:420px;
+}
+
+/* SERVICES */
+
+.services{
+
+padding:100px 120px;
+
+}
+
+.services h2{
+text-align:center;
+margin-bottom:60px;
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:30px;
+
+}
+
+.card{
+
+background:#1e293b;
+
+padding:35px;
+
+border-radius:12px;
+
+transition:0.3s;
+
+text-align:center;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+background:#334155;
+
+}
+
+.card i{
+
+font-size:40px;
+
+color:#38bdf8;
+
+margin-bottom:15px;
+
+}
+
+/* ABOUT */
+
+.about{
+
+display:flex;
+
+align-items:center;
+
+gap:60px;
+
+padding:100px 120px;
+
+background:#020617;
+
+}
+
+.about img{
+
+width:420px;
+
+border-radius:10px;
+
+}
+
+.about-text{
+
+max-width:500px;
+
+}
+
+.about-text h2{
+
+margin-bottom:20px;
+
+}
+
+/* FOUNDER */
+
+.founder{
+
+padding:100px 120px;
+
+text-align:center;
+
+}
+
+.founder img{
+
+width:150px;
+
+border-radius:50%;
+
+margin-bottom:15px;
+
+}
+
+/* CONTACT */
+
+.contact{
+
+padding:100px 120px;
+
+background:#020617;
+
+text-align:center;
+
+}
+
+input,textarea{
+
+width:100%;
+max-width:450px;
+
+margin:10px auto;
+
+display:block;
+
+padding:12px;
+
+border:none;
+
+border-radius:6px;
+
+}
+
+/* FOOTER */
+
+footer{
+
+padding:30px;
+
+text-align:center;
+
+background:#020617;
+
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+
+position:fixed;
+
+bottom:20px;
+
+right:20px;
+
+background:#25D366;
+
+padding:15px;
+
+border-radius:50%;
+
+font-size:22px;
+
+color:white;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-img img{
+margin-top:40px;
+}
+
+.grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.about{
+flex-direction:column;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Kavish Informatics</div>
+
+<nav>
+
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#about">Company</a>
+<a href="#founder">Founder</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h1>Future Ready <span>IT Infrastructure</span></h1>
+
+<p>
+
+Hardware • Networking • Asset Management • CCTV Solutions
+
+</p>
+
+<a class="btn" href="#contact">Request IT Support</a>
+
+</div>
+
+<div class="hero-img">
+
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+
+</div>
+
+</section>
+
+<section class="services" id="services">
+
+<h2>Our Services</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<i class="fa-solid fa-laptop"></i>
+
+<h3>Hardware Supply</h3>
+
+<p>Laptops and enterprise hardware solutions.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-network-wired"></i>
+
+<h3>Network Setup</h3>
+
+<p>Office networking infrastructure setup.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-video"></i>
+
+<h3>CCTV Installation</h3>
+
+<p>Professional surveillance systems.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-database"></i>
+
+<h3>IT Asset Management</h3>
+
+<p>Track and manage company IT assets.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+
+<div class="about-text">
+
+<h2>About Kavish Informatics</h2>
+
+<p>
+
+Kavish Informatics provides professional IT infrastructure
+services including hardware procurement, network setup,
+CCTV installation and IT asset management for businesses.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="founder" id="founder">
+
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+
+<h2>Manish Tomar</h2>
+
+<p>
+
+Founder – Kavish Informatics  
+IT Infrastructure & Asset Management Specialist
+
+</p>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<input placeholder="Your Name">
+
+<input placeholder="Email">
+
+<textarea placeholder="Message"></textarea>
+
+<button class="btn">Send Message</button>
+
+</section>
+
+<footer>
+
+<p>© 2026 Kavish Informatics</p>
+
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/917557575736"
+target="_blank">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+</body>
+  </html>
