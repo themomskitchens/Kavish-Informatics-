@@ -72,6 +72,39 @@ nav a:hover {
   background: #162447;
 }
 
+.founder-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.founder-image img {
+  width: 300px;
+  border-radius: 15px;
+  transition: 0.4s;
+}
+
+.founder-image img:hover {
+  transform: scale(1.05);
+}
+
+.founder-content {
+  max-width: 500px;
+}
+
+.founder-content h1 {
+  font-size: 40px;
+}
+
+.founder-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.founder-content li {
+  margin: 10px 0;
+}
 footer {
   text-align: center;
   padding: 20px;
