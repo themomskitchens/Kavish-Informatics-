@@ -1,130 +1,54 @@
-body{
-margin:0;
-font-family:Poppins;
-background:#0c0f1c;
-color:white;
-}
-
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 60px;
-background:black;
-position:sticky;
-top:0;
-}
-
-nav a{
-margin:0 15px;
-text-decoration:none;
-color:white;
-}
-
-.btn{
-background:#00d9ff;
-padding:10px 20px;
-color:black;
-}
-
-.hero img{
-width:100%;
-height:80vh;
-object-fit:cover;
-}
-
-.hero-text{
-position:absolute;
-top:40%;
-left:10%;
-}
-
-.about{
-padding:80px;
-text-align:center;
-max-width:900px;
-margin:auto;
-}
-
-.hours{
-padding:80px;
-text-align:center;
-}
-
-.hours-card{
-background:#162447;
-padding:40px;
-border-radius:10px;
-transform:rotateX(10deg);
-}
-
-.contact-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-padding:80px;
-}
-
-.services{
-padding:80px;
-text-align:center;
-}
-
-.service-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-}
-
-.service-card{
-background:#162447;
-padding:30px;
-border-radius:10px;
-transition:.3s;
-}
-
-.service-card:hover{
-transform:translateY(-10px);
-}
-
-.quote{
-padding:80px;
-text-align:center;
-}
-
-.quote input,
-.quote textarea{
-width:60%;
-padding:12px;
-margin:10px;
-}
-
-.reviews{
-padding:80px;
-text-align:center;
-}
-
-.review{
-background:#162447;
-padding:30px;
-margin:20px;
-}
-
-.whatsapp{
-position:fixed;
-bottom:30px;
-left:30px;
-background:#25D366;
-padding:15px;
-border-radius:50%;
-color:white;
-}
-
-#topBtn{
-position:fixed;
-bottom:30px;
-right:30px;
-padding:15px;
-background:#00d9ff;
-border:none;
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#07111f;color:#fff;overflow-x:hidden}
+.navbar{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:22px 5%;background:rgba(5,15,30,.95);z-index:999}
+.logo{font-size:28px;font-weight:700;color:#00d8ff}
+nav{display:flex;gap:28px}
+nav a{text-decoration:none;color:#fff;font-size:15px;transition:.3s}
+nav a:hover,nav a.active{color:#00d8ff}
+.touch-btn{padding:12px 24px;background:#00d8ff;color:#001;text-decoration:none;border-radius:40px;font-weight:bold}
+.hero{height:100vh;position:relative}
+.hero img{width:100%;height:100%;object-fit:cover}
+.overlay{position:absolute;inset:0;background:rgba(0,0,0,.65)}
+.hero-content{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center}
+.hero-content h4{font-size:30px;letter-spacing:4px}
+.hero-content h1{font-size:72px;color:#00d8ff;margin:15px 0}
+.hero-content p{font-size:26px}
+.section{padding:110px 8%}
+.section-title{text-align:center;font-size:46px;color:#00d8ff;margin-bottom:25px}
+.line{width:120px;height:4px;background:#00d8ff;margin:0 auto 35px;border-radius:50px}
+.big-text{font-size:20px;line-height:1.9;text-align:center;max-width:1000px;margin:auto;color:#ddd}
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px}
+.glass-card,.service-card{background:rgba(255,255,255,.08);padding:40px 30px;border-radius:24px;border:1px solid rgba(255,255,255,.15);backdrop-filter:blur(12px);transition:.4s;text-align:center}
+.glass-card:hover,.service-card:hover{transform:translateY(-10px);border-color:#00d8ff}
+.counter{font-size:60px;color:#00d8ff;margin-bottom:15px}
+.hours-card{max-width:700px;margin:auto;padding:50px;background:linear-gradient(135deg,#0d2138,#102d52);border-radius:30px;text-align:center;box-shadow:0 0 35px rgba(0,216,255,.25)}
+.hours-card h3{font-size:34px;margin-bottom:15px}
+.contact-box{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.contact-box img{width:100%;border-radius:25px;height:420px;object-fit:cover}
+.contact-content h2{font-size:46px;margin-bottom:25px;color:#00d8ff}
+.contact-content p{font-size:22px;margin-bottom:16px}
+.socials{margin-top:30px;display:flex;gap:15px}
+.socials a{padding:12px 18px;background:#0f2035;border-radius:12px;text-decoration:none;color:#fff;transition:.3s}
+.socials a:hover{background:#00d8ff;color:#000;transform:translateY(-4px)}
+.page-banner{padding:180px 8% 100px;text-align:center;background:linear-gradient(to right,#07111f,#102a45)}
+.page-banner h1{font-size:64px;color:#00d8ff}
+.quote-form{max-width:800px;margin:auto;display:flex;flex-direction:column;gap:20px}
+.quote-form input,.quote-form textarea{padding:18px;background:#102033;border:none;border-radius:14px;color:#fff;font-size:18px}
+.quote-form textarea{height:160px}
+.quote-form button{padding:18px;border:none;border-radius:50px;background:#00d8ff;color:#001;font-size:20px;font-weight:bold;cursor:pointer}
+.founder-section{display:grid;grid-template-columns:350px 1fr;gap:50px;align-items:center}
+.founder-img{width:100%;border-radius:30px}
+.timeline{margin-top:30px;display:flex;flex-direction:column;gap:18px}
+.timeline div{background:#102033;padding:18px;border-radius:15px}
+.timeline span{color:#00d8ff;font-weight:bold;margin-right:12px}
+.whatsapp-btn{position:fixed;right:20px;bottom:20px;background:#25d366;color:#fff;padding:14px 20px;border-radius:50px;text-decoration:none;z-index:999}
+#topBtn{position:fixed;left:20px;bottom:20px;background:#00d8ff;border:none;color:#000;font-size:22px;width:55px;height:55px;border-radius:50%;display:none;cursor:pointer;z-index:999}
+.reveal{opacity:0;transform:translateY(80px);transition:1s}
+.reveal.active{opacity:1;transform:translateY(0)}
+@media(max-width:900px){
+.navbar{flex-direction:column;gap:15px}
+nav{flex-wrap:wrap;justify-content:center}
+.hero-content h1{font-size:42px}
+.contact-box,.founder-section{grid-template-columns:1fr}
+.page-banner h1{font-size:42px}
 }
