@@ -1,63 +1,100 @@
 <!DOCTYPE html>
-      <p>Current Clients</p>
-    </div>
-
-    <div class="glass-card">
-      <h2 class="counter" data-target="24">0</h2>
-      <p>24/7 Support</p>
-    </div>
-
-    <div class="glass-card">
-      <h2 class="counter" data-target="4">0</h2>
-      <p>Years Experience</p>
-    </div>
-  </div>
+<html>
+<head>
+  <title>Kavish Informatics</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
 <header class="navbar">
-  <div class="logo">KAVISH INFORMATICS</div>
-
+  <div class="logo">Kavish Informatics</div>
   <nav>
     <a class="active" href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="why-choose-us.html">Why Choose Us</a>
-    <a href="quote.html">Request a Quote</a>
     <a href="about.html">About</a>
-    <a href="reviews.html">Reviews</a>
+    <a href="services.html">Services</a>
+    <a href="founder.html">Founder</a>
+    <a href="contact.html">Contact</a>
   </nav>
-
-  <a href="quote.html" class="touch-btn">GET IN TOUCH</a>
+  <a href="quote.html" class="touch-btn">Get Quote</a>
 </header>
-</section>
 
-<section class="section reveal">
-  <div class="section-title">Operation Hours</div>
-  <div class="hours-card">
-    <h3>Mon - Sat: 10 AM - 07 PM</h3>
-    <p>Sunday: As Per Request</p>
+<section class="hero">
+  <div class="hero-content">
+    <h4>TRUSTED IT SOLUTIONS</h4>
+    <h1>Your Complete IT Hardware Partner</h1>
+    <p>Professional support for hardware, networking, rentals, upgrades and maintenance for offices and businesses.</p>
+    <a href="services.html" class="main-btn">Explore Services</a>
   </div>
 </section>
 
-<section class="section contact-section reveal">
-  <div class="contact-box">
-    <img src="Assets/16166602903995.jpg" alt="Processor">
+<section class="section">
+  <h2 class="section-title">Our Main Services</h2>
+  <p class="section-subtitle">Click any service below to view its key points and business benefits.</p>
 
-    <div class="contact-content">
-      <h2>Contact Us</h2>
-      <p>FIEE Complex, Okhla Phase-2, New Delhi-110020</p>
-      <p>+91-7557575736</p>
-      <p>kavish.informatics@gmail.com</p>
+  <div class="cards-grid">
+    <div class="service-card" onclick="openModal('hardware')">
+      <h3>IT Hardware Support</h3>
+      <p>Support for laptops, desktops, printers, servers and office systems.</p>
+    </div>
 
-      <div class="socials">
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">LinkedIn</a>
-      </div>
+    <div class="service-card" onclick="openModal('network')">
+      <h3>Network Services</h3>
+      <p>Internet setup, Wi‑Fi management, CCTV and networking solutions.</p>
+    </div>
+
+    <div class="service-card" onclick="openModal('rental')">
+      <h3>Hardware Rental</h3>
+      <p>Affordable rental options for projects, events and temporary office use.</p>
     </div>
   </div>
 </section>
 
-<a href="https://wa.me/917557575736" class="whatsapp-btn">WhatsApp</a>
-<button id="topBtn">↑</button>
+<div class="modal" id="hardware">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('hardware')">&times;</span>
+    <h2>IT Hardware Support</h2>
+    <ul>
+      <li>Laptop and desktop troubleshooting</li>
+      <li>Printer, scanner and peripheral support</li>
+      <li>Hardware installation and replacement</li>
+      <li>Preventive maintenance and system cleaning</li>
+      <li>Quick issue resolution for office downtime</li>
+    </ul>
+  </div>
+</div>
 
+<div class="modal" id="network">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('network')">&times;</span>
+    <h2>Network Services</h2>
+    <ul>
+      <li>LAN and Wi‑Fi setup</li>
+      <li>Internet troubleshooting and speed improvement</li>
+      <li>CCTV and camera connectivity</li>
+      <li>Router, switch and firewall configuration</li>
+      <li>Secure and stable office network management</li>
+    </ul>
+  </div>
+</div>
+
+<div class="modal" id="rental">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('rental')">&times;</span>
+    <h2>Hardware Rental</h2>
+    <ul>
+      <li>Laptop and desktop rental</li>
+      <li>Project based temporary hardware support</li>
+      <li>Affordable monthly rental plans</li>
+      <li>Ready stock for urgent requirements</li>
+      <li>Installation and pickup included</li>
+    </ul>
+  </div>
+</div>
+
+<footer class="footer">
+  © 2026 Kavish Informatics | Sky Blue & White Theme
+</footer>
+
+<script src="js/script.js"></script>
 </body>
-</html>
+      </html>
