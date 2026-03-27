@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Services | Kavish Informatics</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <title>Services - Kavish Informatics</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="navbar">
-  <div class="logo">KAVISH INFORMATICS</div>
+  <div class="logo">Kavish Informatics</div>
   <nav>
     <a href="index.html">Home</a>
-    <a class="active" href="services.html">Services</a>
-    <a href="why-choose-us.html">Why Choose Us</a>
-    <a href="quote.html">Request a Quote</a>
     <a href="about.html">About</a>
-    <a href="reviews.html">Reviews</a>
+    <a class="active" href="services.html">Services</a>
+    <a href="founder.html">Founder</a>
+    <a href="contact.html">Contact</a>
   </nav>
+  <a href="quote.html" class="touch-btn">Get Quote</a>
 </header>
 
 <section class="page-banner">
   <h1>Our Services</h1>
 </section>
 
-<section class="section cards-grid reveal">
-  <div class="service-card"><h3>IT Hardware Support</h3><p>Laptop, Desktop, Printer and Server support.</p></div>
-  <div class="service-card"><h3>Networking</h3><p>LAN, WiFi, Router and Firewall setup.</p></div>
-  <div class="service-card"><h3>CCTV Installation</h3><p>Camera installation and monitoring systems.</p></div>
-  <div class="service-card"><h3>Annual Maintenance</h3><p>AMC and preventive maintenance services.</p></div>
-  <div class="service-card"><h3>Hardware Rental</h3><p>Laptops, desktops and projectors on rent.</p></div>
-  <div class="service-card"><h3>AI & Software Tools</h3><p>Latest AI tools and business software guidance.</p></div>
+<section class="section">
+  <div class="cards-grid">
+    <div class="service-card" onclick="openModal('asset')">
+      <h3>Asset Management</h3>
+      <p>Track office laptops, desktops and accessories.</p>
+    </div>
+
+    <div class="service-card" onclick="openModal('upgrade')">
+      <h3>Hardware Upgrades</h3>
+      <p>Improve performance through RAM, SSD and component upgrades.</p>
+    </div>
+
+    <div class="service-card" onclick="openModal('maintenance')">
+      <h3>AMC & Maintenance</h3>
+      <p>Regular preventive maintenance for all office systems.</p>
+    </div>
+  </div>
 </section>
+
+<!-- Add modal sections exactly same format as home page -->
+
+<script src="js/script.js"></script>
 </body>
 </html>
