@@ -3,116 +3,138 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kavish Informatics</title>
+  <title>Kavish Informatics | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
 <header class="navbar">
-  <div class="logo">Kavish Informatics</div>
+  <div class="logo">KAVISH INFORMATICS</div>
 
   <nav>
-    <a href="index.html" class="active">Home</a>
-    <a href="about.html">About</a>
+    <a href="index.html">Home</a>
     <a href="services.html">Services</a>
-    <a href="founder.html">Founder</a>
-    <a href="contact.html">Contact</a>
+    <a href="why-choose-us.html">Why Choose Us</a>
+    <a href="quote.html">Request a Quote</a>
+    <a href="about.html">About</a>
+    <a href="reviews.html">Reviews</a>
   </nav>
 
-  <a href="quote.html" class="touch-btn">Get Quote</a>
+  <a href="quote.html" class="touch-btn">GET IN TOUCH</a>
 </header>
 
 <section class="hero">
-  <div class="hero-content">
-    <h4>TRUSTED IT SOLUTIONS</h4>
-    <h1>Your Complete IT Hardware Partner</h1>
-    <p>
-      Professional support for hardware, networking, rentals,
-      upgrades and maintenance for offices and businesses.
-    </p>
+  <img src="Assess/16166602903995.jpg" alt="Technology">
+  <div class="overlay"></div>
 
-    <a href="services.html" class="main-btn">Explore Services</a>
+  <div class="hero-content">
+    <span class="tag">Professional IT Solutions Since 2021</span>
+    <h4>WELCOME TO</h4>
+    <h1>KAVISH INFORMATICS</h1>
+    <p>Reliable IT Support, Networking, CCTV, Hardware & Business Technology Solutions</p>
+
+    <div class="hero-buttons">
+      <a href="services.html" class="primary-btn">Explore Services</a>
+      <a href="quote.html" class="secondary-btn">Request Quote</a>
+    </div>
   </div>
 </section>
 
-<section class="section">
-  <h2 class="section-title">Our Main Services</h2>
-  <p class="section-subtitle">
-    Click any service below to view its key points and business benefits.
-  </p>
+<section class="section reveal">
+  <div class="section-title">Who We Are</div>
+  <div class="line"></div>
 
+  <p class="big-text">
+    Kavish Informatics is a trusted IT partner in Delhi providing hardware support, networking,
+    CCTV, software assistance, annual maintenance, rental solutions and complete business technology support.
+    We help companies reduce downtime, improve productivity and build strong IT systems at affordable pricing.
+  </p>
+</section>
+
+<section class="section achievement-section reveal">
+  <div class="section-title">Our Achievements</div>
   <div class="cards-grid">
 
-    <div class="service-card" onclick="openModal('hardware')">
-      <h3>IT Hardware Support</h3>
-      <p>
-        Support for laptops, desktops, printers, servers and office systems.
-      </p>
+    <div class="glass-card">
+      <h2 class="counter" data-target="120">0</h2>
+      <p>Projects Completed</p>
     </div>
 
-    <div class="service-card" onclick="openModal('network')">
-      <h3>Network Services</h3>
-      <p>
-        Internet setup, Wi‑Fi management, CCTV and networking solutions.
-      </p>
+    <div class="glass-card">
+      <h2 class="counter" data-target="75">0</h2>
+      <p>Happy Clients</p>
     </div>
 
-    <div class="service-card" onclick="openModal('rental')">
-      <h3>Hardware Rental</h3>
-      <p>
-        Affordable rental options for projects, events and temporary office use.
-      </p>
+    <div class="glass-card">
+      <h2 class="counter" data-target="24">0</h2>
+      <p>24/7 Support Availability</p>
+    </div>
+
+    <div class="glass-card">
+      <h2 class="counter" data-target="4">0</h2>
+      <p>Years Experience</p>
     </div>
 
   </div>
 </section>
 
-<div class="modal" id="hardware">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('hardware')">&times;</span>
-    <h2>IT Hardware Support</h2>
-    <ul>
-      <li>Laptop and desktop troubleshooting</li>
-      <li>Printer and peripheral support</li>
-      <li>System installation and setup</li>
-      <li>Quick office downtime resolution</li>
-      <li>Preventive maintenance and cleaning</li>
-    </ul>
+<section class="section reveal">
+  <div class="section-title">Why Businesses Trust Us</div>
+  <div class="cards-grid">
+    <div class="service-card">
+      <h3>Fast Response</h3>
+      <p>Quick support whenever your office faces system shutdown, network issue or hardware failure.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Experienced Team</h3>
+      <p>Practical knowledge in laptops, desktops, CCTV, internet, Wi‑Fi, servers and office infrastructure.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Affordable Pricing</h3>
+      <p>Professional IT services at cost‑effective pricing for offices, factories, shops and companies.</p>
+    </div>
   </div>
-</div>
+</section>
 
-<div class="modal" id="network">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('network')">&times;</span>
-    <h2>Network Services</h2>
-    <ul>
-      <li>Wi‑Fi and LAN setup</li>
-      <li>Internet troubleshooting</li>
-      <li>CCTV connectivity and camera setup</li>
-      <li>Router and firewall configuration</li>
-      <li>Secure office networking solutions</li>
-    </ul>
+<section class="section reveal">
+  <div class="section-title">Operation Hours</div>
+  <div class="hours-card">
+    <h3>Monday - Saturday</h3>
+    <h2>10:00 AM - 07:00 PM</h2>
+    <p>Sunday: Emergency Support On Request</p>
   </div>
-</div>
+</section>
 
-<div class="modal" id="rental">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('rental')">&times;</span>
-    <h2>Hardware Rental</h2>
-    <ul>
-      <li>Laptop and desktop rental</li>
-      <li>Temporary project support</li>
-      <li>Affordable monthly plans</li>
-      <li>Immediate stock availability</li>
-      <li>Delivery and installation included</li>
-    </ul>
+<section class="section contact-section reveal">
+  <div class="contact-box">
+
+    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80" alt="IT Services">
+
+    <div class="contact-content">
+      <span class="small-heading">CONTACT US</span>
+      <h2>Let's Build Better IT For Your Business</h2>
+
+      <p>FIEE Complex, Okhla Phase‑2, New Delhi‑110020</p>
+      <p>+91 7557575736</p>
+      <p>kavish.informatics@gmail.com</p>
+
+      <div class="socials">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
-<footer class="footer">
-  © 2026 Kavish Informatics. All Rights Reserved.
-</footer>
+<a href="https://wa.me/917557575736" class="whatsapp-btn">WhatsApp</a>
+<button id="topBtn">↑</button>
 
-<script src="script.js"></script>
 </body>
-</html>
+  </html>
