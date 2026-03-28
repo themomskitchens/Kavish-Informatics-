@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Request a Quote</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <title>Get Quote</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="navbar">
-  <div class="logo">KAVISH INFORMATICS</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="why-choose-us.html">Why Choose Us</a>
-    <a class="active" href="quote.html">Request a Quote</a>
-    <a href="about.html">About</a>
-    <a href="reviews.html">Reviews</a>
-  </nav>
-</header>
+<header class="navbar">...</header>
 
 <section class="page-banner">
-  <h1>Request a Quote</h1>
+  <h1>Get a Quote</h1>
 </section>
 
 <section class="section">
-  <form class="quote-form" action="YOUR_GOOGLE_SCRIPT_URL" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="text" name="phone" placeholder="Mobile Number" required>
-    <input type="email" name="email" placeholder="Email Address" required>
-    <input type="text" name="service" placeholder="Required Service" required>
-    <textarea name="message" placeholder="Write Your Requirement"></textarea>
+  <form class="quote-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="tel" placeholder="Mobile Number" required>
+    <input type="email" placeholder="Email Address">
+
+    <select>
+      <option>Select Service</option>
+      <option>IT Hardware Support</option>
+      <option>Network Services</option>
+      <option>Hardware Rental</option>
+      <option>AMC & Maintenance</option>
+    </select>
+
+    <textarea placeholder="Describe your requirement"></textarea>
     <button type="submit">Submit Request</button>
   </form>
 </section>
+
+<script src="js/script.js"></script>
 </body>
 </html>
