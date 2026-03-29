@@ -549,26 +549,4 @@ body{
     width:48px;
     height:48px;
   }
-
-  .services-grid{
-  max-width:1200px;
-  margin:60px auto;
-  padding:0 5%;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:30px;
-}
-
-.service-card{
-  background:#071a30;
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:18px;
-  padding:28px;
-  color:#fff;
-}
-
-.service-card h3{
-  color:#22cfff;
-  margin-bottom:12px;
-}
-}
+  }
