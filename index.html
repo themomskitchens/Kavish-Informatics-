@@ -13,7 +13,10 @@
 <body>
 
 <header class="navbar">
-  <div class="logo">KAVISH INFORMATICS</div>
+  <div class="logo">
+  <img src="Assets/kt-monogram-logo-vector-33144357-removebg-preview.png" alt="Kavish Informatics Logo">
+  <span>KAVISH INFORMATICS</span>
+</div>
 
   <nav>
     <a href="index.html">Home</a>
@@ -32,6 +35,179 @@ body{
   padding-top:110px;
 }
 
+.logo{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  font-size:30px;
+  font-weight:800;
+  color:#1ecfff;
+}
+
+.logo img{
+  width:52px;
+  height:52px;
+  object-fit:contain;
+}
+
+.logo span{
+  line-height:1;
+}
+
+@media(max-width:768px){
+  .logo{
+    flex-direction:column;
+    gap:8px;
+    font-size:20px;
+  }
+
+  .logo img{
+    width:44px;
+    height:44px;
+  }
+}
+
+@media(max-width:768px){
+  html,body{
+    width:100%;
+    overflow-x:hidden;
+  }
+
+  body{
+    padding-top:220px;
+  }
+
+  .navbar{
+    flex-direction:column;
+    text-align:center;
+    gap:12px;
+    padding:14px 10px;
+  }
+
+  .logo{
+    font-size:22px;
+    line-height:1.2;
+  }
+
+  .navbar nav{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:8px;
+    margin:0;
+  }
+
+  .navbar nav a{
+    font-size:13px;
+    padding:9px 6px;
+    white-space:normal;
+    line-height:1.3;
+  }
+
+  .touch-btn{
+    max-width:200px;
+    font-size:13px;
+    padding:10px 16px;
+  }
+
+  .page-hero h1,
+  .hero h1,
+  .about-left h3{
+    font-size:34px !important;
+    line-height:1.15;
+    padding:0 10px;
+    word-break:break-word;
+  }
+
+  .page-hero p,
+  .hero p,
+  .about-left p,
+  .highlight-card p,
+  .service-card p{
+    font-size:14px !important;
+    line-height:1.7;
+    padding:0 6px;
+  }
+
+  .services-grid,
+  .founder-highlights,
+  .about-container{
+    grid-template-columns:1fr !important;
+    gap:16px;
+  }
+
+  .service-card,
+  .highlight-card,
+  .founder-card,
+  .popup-box{
+    padding:18px;
+    width:100%;
+    max-width:100%;
+    box-sizing:border-box;
+  }
+
+  .founder-card ul{
+    padding-left:0;
+  }
+}
+
+  .navbar nav{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+    margin:0;
+  }
+
+  .navbar nav a{
+    display:block;
+    background:rgba(255,255,255,.06);
+    padding:10px;
+    border-radius:10px;
+    font-size:14px;
+  }
+
+  .touch-btn{
+    width:100%;
+    max-width:220px;
+    text-align:center;
+  }
+
+  body{
+    padding-top:220px;
+  }
+}
+
+.service-popup{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.75);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  z-index:100000;
+}
+
+.popup-box{
+  width:100%;
+  max-width:420px;
+  background:#081a30;
+  border-radius:20px;
+  padding:28px;
+  color:#fff;
+  position:relative;
+}
+
+.close-popup{
+  position:absolute;
+  top:10px;
+  right:16px;
+  font-size:30px;
+  cursor:pointer;
+}
+
 @media(max-width:1100px){
   body{
     padding-top:160px;
@@ -40,14 +216,14 @@ body{
 </style>
 
 <section class="hero">
-  <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80" alt="Technology">
+  <img src="Assets/16166602903995.jpg" alt="Technology">
   <div class="overlay"></div>
 
   <div class="hero-content">
     <span class="tag">Professional IT Solutions Since 2021</span>
     <h4>WELCOME TO</h4>
     <h1>KAVISH INFORMATICS</h1>
-    <p>Reliable IT Support, Networking, CCTV, Hardware & Business Technology Solutions</p>
+    <p>Reliable & Cost Effective IT Support Business Technology Solutions</p>
 
     <div class="hero-buttons">
       <a href="services.html" class="primary-btn">Explore Services</a>
@@ -61,9 +237,10 @@ body{
   <div class="line"></div>
 
   <p class="big-text">
-    Kavish Informatics is a trusted IT partner in Delhi providing hardware support, networking,
-    CCTV, software assistance, annual maintenance, rental solutions and complete business technology support.
-    We help companies reduce downtime, improve productivity and build strong IT systems at affordable pricing.
+    Kavish Informatics is a trusted IT partner in Delhi. We are providing complete business technology support.
+  </p> Our procurement analysis ensures that every asset acquisition is cost-effective, preventing overspending beyond the fair market price.
+   <p> We help companies to improve productivity, reduce downtime, and build strong IT systems at affordable pricing.
+  </p> We are managing companies hardware, networking, CCTV, software assistance and monthly maintenance.
   </p>
 </section>
 
@@ -72,17 +249,17 @@ body{
   <div class="cards-grid">
 
     <div class="glass-card">
-      <h2 class="counter" data-target="120">0</h2>
+      <h2 class="counter" data-target="15+">0</h2>
       <p>Projects Completed</p>
     </div>
 
     <div class="glass-card">
-      <h2 class="counter" data-target="75">0</h2>
+      <h2 class="counter" data-target="7+">0</h2>
       <p>Happy Clients</p>
     </div>
 
     <div class="glass-card">
-      <h2 class="counter" data-target="24">0</h2>
+      <h2 class="counter" data-target="2">0</h2>
       <p>24/7 Support Availability</p>
     </div>
 
@@ -98,8 +275,14 @@ body{
   <div class="section-title">Why Businesses Trust Us</div>
   <div class="cards-grid">
     <div class="service-card">
-      <h3>Fast Response</h3>
+      <h3>Proactive Technical Expertise</h3>
+      <p>We don’t just fix problems; we prevent them. Our team consists of certified IT specialists who stay ahead of the curve in Cloud Computing, Cybersecurity, and Infrastructure Management. We bring enterprise-level expertise to businesses of all sizes.</p>
+      <h3>Tailored Scalability</h3>
+      <p>Every business is unique. We ditch the "one-size-fits-all" approach to design custom IT roadmaps that align with your specific goals. Whether you are a startup or an established enterprise, our solutions scale seamlessly as you grow.</p>
+      
+     </h3>Fast Response</h3>
       <p>Quick support whenever your office faces system shutdown, network issue or hardware failure.</p>
+    
     </div>
 
     <div class="service-card">
@@ -148,5 +331,133 @@ body{
 <a href="https://wa.me/917557575736" class="whatsapp-btn">WhatsApp</a>
 <button id="topBtn">↑</button>
 
+<section class="about-section">
+  <div class="about-container">
+    <div class="about-left">
+      <h2>Meet The Founder</h2>
+      <h3>MANIAH TOMAR</h3>
+      <p>I am the founder of Kavish Informatics, a technology-driven company created with the vision of helping businesses grow through modern digital solutions. From websites and apps to branding and digital marketing, my aim is to provide complete technology support under one roof.</p>
+      <p>My journey started with a strong interest in computers, design and business ideas. Over time I learned website development, UI/UX design, business strategy and digital marketing. Instead of creating just another company, I wanted to build a brand that people could trust.</p>
+      <p>Today, Kavish Informatics works with startups, local businesses and companies that want to build a strong online identity. Every project is handled with creativity, planning and attention to detail so that clients receive not only a beautiful design but also real business growth.</p>
+
+      <div class="founder-highlights">
+        <div class="highlight-card">
+          <h4>Vision</h4>
+          <p>To build one of the most trusted technology companies for modern businesses.</p>
+        </div>
+
+        <div class="highlight-card">
+          <h4>Mission</h4>
+          <p>To provide affordable, modern and high-quality digital services to every client.</p>
+        </div>
+
+        <div class="highlight-card">
+          <h4>Skills</h4>
+          <p>Web Development, App Development, UI/UX Design, Branding and Digital Marketing.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-right">
+      <div class="founder-card">
+        <div class="founder-image">KS</div>
+        <h3>MANIAH TOMAR</h3>
+        <span>Founder & CEO</span>
+
+        <ul>
+          <li>Founder of Kavish Informatics</li>
+          <li>Technology Entrepreneur</li>
+          <li>Website & App Specialist</li>
+          <li>Focused on Business Growth</li>
+          <li>Dedicated to Client Satisfaction</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.about-container{
+  max-width:1200px;
+  margin:70px auto;
+  padding:0 5%;
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:40px;
+}
+.about-left h2{
+  color:#22cfff;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  margin-bottom:10px;
+}
+.about-left h3{
+  color:#fff;
+  font-size:44px;
+  margin-bottom:20px;
+}
+.about-left p{
+  color:#d4deea;
+  line-height:1.9;
+  margin-bottom:20px;
+}
+.founder-highlights{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:30px;
+}
+.highlight-card,.founder-card{
+  background:#08192d;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:20px;
+  padding:24px;
+}
+.highlight-card h4{
+  color:#22cfff;
+  margin-bottom:10px;
+}
+.founder-card{
+  text-align:center;
+}
+.founder-image{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#22cfff,#0066ff);
+  margin:0 auto 18px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:34px;
+  font-weight:800;
+  color:#fff;
+}
+.founder-card h3{
+  color:#fff;
+}
+.founder-card span{
+  color:#22cfff;
+}
+.founder-card ul{
+  margin-top:20px;
+  padding:0;
+  list-style:none;
+  text-align:left;
+}
+.founder-card li{
+  color:#d4deea;
+  margin-bottom:12px;
+}
+@media(max-width:768px){
+  .about-container,
+  .founder-highlights{
+    grid-template-columns:1fr;
+  }
+  .about-left h3{
+    font-size:34px;
+  }
+}
+</style>
 </body>
-</html>
+                                                            </html>
